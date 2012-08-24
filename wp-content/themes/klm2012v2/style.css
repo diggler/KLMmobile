@@ -3179,3 +3179,12 @@ footer aside{
 clear:both;
 
 }
+
+.ui-corner-top {
+    border-top-left-radius: 0.0em;
+    border-top-right-radius: 0.0em;
+}
+.ui-corner-bottom {
+    border-bottom-left-radius: 0.0em;
+    border-bottom-right-radius: 0.0em;
+}
