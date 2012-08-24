@@ -1,0 +1,65 @@
+/*   
+Theme Name: Generic jQuery Mobile Theme A4
+Theme URI: http://frobert.com/
+Description: Generic jQuery Mobile Theme for use with mobile detector plugins, using JQM Alpha 4.
+Author: Francis Robert
+Author URI: http://frobert.com/
+Version: 0.2
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+----------------------------------------------
+Please make sure to read the readme.txt file! 
+----------------------------------------------
+*/
+
+.clear { clear: both; }
+h1, h2, h3 { margin: 0 0 15px 0; }
+li { margin-left:20px; }
+li.pagenav  { list-style:none; margin-left:0px; }
+h1.home-logo.ui-title { float:left;	margin: 2px 12px 0px 15px; height:36px; }
+ol { padding-left:20px; }
+ol.commentlist li.comment { border-bottom: 1px dotted #666; padding: 10px; }
+ol.commentlist li.comment div.vcard img.avatar { float:right; margin: 0 10px 10px 10px; }
+div.entry p img { display:block; margin-bottom:15px; margin-top:15px; }
+html.portrait .ui-page-active #gallery-1 .gallery-item { margin-top:0px; margin-right:5px; width:140px; }
+html.landscape .ui-page-active #gallery-1 .gallery-item { margin-top:0px; margin-right:5px; width:140px; }
+html.portrait .ui-page-active #gallery-1 .gallery-item img { margin-top:0px; margin-right:5px; width:140px;height:140px; }
+html.landscape .ui-page-active #gallery-1 .gallery-item img { margin-top:0px; margin-right:5px; width:140px;height:140px; }
+.ui-page-active #gallery-1 img { border:0px; }
+.ui-page-active #gallery-1 dt { margin:0px; padding:0px; }
+div.attachmentpopup { background:#000; }
+div.ui-dialog-buttons { position:fixed; bottom:5px; left:5px; height:40px; width:300px; }
+.ui-btn-inner .ui-li-desc { margin-top:0px; font-size:80%; }
+.ui-content .meta { margin:0px 0px 15px 0px; font-size:80%; }
+.ui-li-heading { overflow-x:visible; text-overflow:clip; white-space:normal; margin-top:0px; line-height:18px; }
+.ui-btn-inner .ui-li-heading { margin-top:-8px; }
+#header_btn { float:right; margin:0px; padding-top:5px; padding-right:5px; }
+#header_navbar { clear:both; }
+#footer_btn { float:right; padding-top:5px; padding-right:0; }
+span.footer_description { font-size:70%; }
+.footer-extra { font-size:70%; margin-bottom:25px; }
+.ui-field-contain { border-bottom-width:0px; }
+div.nav-next-previous.ui-listview { margin-top:25px; margin-bottom:25px; }
+div.nav-next-previous.ui-listview .next-link {}
+div.nav-next-previous.ui-listview .previous-link .ui-btn-text { float:right; }
+div.nav-next-previous.ui-listview .previous-link .ui-icon { float:left; }
+
+div.nav-next-previous.ui-listview li.prev a.ui-link-inherit { padding:0; }
+.ui-footer { width:auto; }
+
+h1 { line-height:24pt; margin-bottom: 0px; padding-bottom:5px; }
+a.next_picture_link { display:block; text-align:right; }
+.older-entries-link { float:left; padding-top:15px; }
+.newer-entries-link { float:right; padding-top:15px; }
+.ui-field-contain { padding-top:0;padding-bottom:1em; }
+.entry-utility { font-style:italic; padding-bottom:15px; }
+/*	PORTRAIT	*/
+@media all and (orientation: portrait) { 
+	div.attachment-picture img { display:table-cell; vertical-align:middle; margin:auto auto; } 
+} 
+/*	LANDSCAPE	*/
+@media all and (orientation: landscape) {  
+	div.attachment-picture { display:table-cell; vertical-align:top; margin:auto auto; }
+	div.attachment-picture img { min-height:320px; min-width:500px; width:100%; height:auto; }
+}      
+

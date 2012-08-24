@@ -56,24 +56,23 @@ return $mobi_check;
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width">
 
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <?php if (mobile_browser()>0){?>
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 <link rel="stylesheet" href="css/style.css" />
-	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script><br>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>    
 <?php } ?>
-
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <?php wp_head();?>
 
 
 
 </head>
 <body>
-
 <div id="fb-root"></div>
 
 <script>(function(d, s, id) {
@@ -104,10 +103,12 @@ $todaysDay = date('l');
 echo '<div class="container_24">';
 }?>
 
-    <header  <?php if (mobile_browser()>0){ echo 'data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false"'; }?>> 
+    <header  <?php if (mobile_browser()>0){ echo 'data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false" data-backbtn="true"'; }?>> 
 
     	<?php if (mobile_browser()>0){ 
-		echo '<div data-role="navbar" data-iconpos="top">';
+		echo '<img src="http://kalamazoolocalmusic.com/wp-content/themes/klm2012/images/logo.png" title="Kalamazoo Local Music" alt="KalamazooLocalMusic.com" width="200px;">
+
+		<div data-role="navbar" data-iconpos="top">';
 		}else{
         echo '<nav class="grid_18">';
 		}?>
